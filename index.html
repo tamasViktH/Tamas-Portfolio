@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tamás Viktor Házos's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <p>devtamas</p>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Tamás Viktor Házos</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Front-End Developer</p>
+            <img src="img\CV-Picture Tamás Viktor Házos 1.jpg" alt="a picture of Jane Smith smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Interface Development</h3>
+                    <p>I build responsive, accessible, and user-focused web interfaces using semantic HTML, modular CSS, and vanilla JavaScript. My goal is to create websites that feel intuitive, perform well across devices, and are easy to maintain and scale. 
+                        I pay close attention to detail, ensuring that layouts are consistent, navigable, and visually balanced.</p>
+                </div> <!-- / service -->
+                
+               
+                <div class="service">
+                    <h3>React Projects & Component Logic</h3>
+                    <p>I use React to structure and bring interactivity to my web applications. I'm confident with hooks, props, state management, and reusable component patterns. 
+                        I completed the Scrimba Frontend Developer Career Path in March 2025, where I built hands-on projects that strengthened my problem-solving and JavaScript logic.</p>
+                </div> <!-- / service -->
+                
+                <!-- Add more services if you want -->
+            
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Projects</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Frontend Developer | Plant Fanatic</p>
+           
+           <div class="about-me__body">
+               <p>I’m Tamás, a frontend developer based in Rome with a background in business and a curiosity-driven mindset. What started as a creative hobby quickly grew into a focused journey into web development. I’m drawn to clean design, thoughtful user experiences, and the process of turning ideas into something real and usable.</p>
+               <p>Originally from Hungary, I’ve studied, worked, and lived in four different countries: Hungary, Italy, Spain, and the Netherlands. That international experience has shaped how I think, how I work with others, and how I approach challenges. I speak four languages, enjoy the rhythm of remote work, and recharge by taking care of plants and simplifying the systems around me — both digital and personal.</p>
+           </div>
+           
+           <img src="img\Képernyőkép 2025-04-24 122508.png" alt="Tamas in amsterdam leaning toward a fance next to a river" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My projects</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Assembly Game -->
+                <a href="Project-items\assembly-game.html" class="portfolio__item">
+                    <img src="../img\Képernyőkép 2025-05-07 181149.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Tenzies -->
+                <a href="Project-items\tenzies.html" class="portfolio__item">
+                    <img src="img/tenzies.jpg" alt="" class="portfolio__img">
+                </a>
+    
+                
+                <!-- Meme generator -->
+                <a href="Project-items\meme-generator.html" class="portfolio__item">
+                    <img src="img/meme-generator.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Weather app -->
+                <a href="Project-items\weather-app.html" class="portfolio__item">
+                    <img src="img\weather-app.png" alt="" class="portfolio__img">
+                </a>
+                
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:tamasviktorhazos@gmail.com" class="footer__link">tamasviktorhazos@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevJane Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="../css/style.css">
+
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <p>devtamas</p>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="../index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="../index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro portfolio-intro">
+            <h1 class="section__title section__title--intro">
+                Tenzies<strong>web app</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">HTML & CSS</p>
+            <img src="../img/tenzies.jpg" alt="" class="intro__img">
+
+        </section>
+        
+        
+        <div class="portfolio-item-individual">
+            <div >
+                <a class="" target="_blank" href="https://github.com/tamasViktH/Tenzies.git"><i class="fab fa-github"></i> GitHub Repo</a>
+                <a class="" target="_blank" href="https://tenzies-hazos.netlify.app/"><i class="fas fa-eye"></i> Live version   </a>
+            </div>
+            <p>Tenzies is a fast-paced, casual dice game I built as part of Scrimba’s Frontend Developer Career Path. The objective is to roll ten dice until all show the same number, with the added challenge of selectively "freezing" certain dice to hold their values between rolls. The app delivers a visually engaging and responsive experience with celebratory confetti effects on victory.</p>
+            <p>This project was developed using <strong>React</strong> and showcases core concepts such as component composition, state management with hooks, conditional rendering, and keyboard accessibility using `useRef`. Each die is rendered as a dynamic, reusable component that tracks its held state and updates accordingly, giving users immediate feedback with color changes and updated button states.</p>
+            <p>Through Tenzies, I practiced working with React's `useState` and `useEffect` hooks, implemented unique identifiers via `nanoid`, and managed game logic cleanly within a functional component structure. It sharpened my understanding of user interaction handling, game logic flow, and responsive styling using custom CSS and semantic HTML. This project gave me confidence in creating complete, polished mini-apps from scratch.</p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:tamasviktorhazos@gmail.com" class="footer__link">tamasviktorhazos@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="../js/index.js"></script>
+        
+    </body>
+</html>
