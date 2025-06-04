@@ -29,7 +29,7 @@
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -53,6 +53,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 section {
@@ -62,7 +63,11 @@ section {
 img {
     display: block;
     max-width: 100%;
+    height: auto; /* maintain aspect ratio */
 }
+
+    
+
 
 strong { font-weight: var(--fw-bold) }
 
@@ -142,12 +147,43 @@ h3 { font-size: var(--fs-h3) }
 
 header {
     display: flex;
-    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between logo and menu */
     padding: 1em;
 }
 
 .logo {
-    max-width: 100px;
+    display: flex;
+    align-items: center; /* Align logo text vertically */
+}
+
+/* General styles for logo links */
+.logo__link {
+    margin: 0; /* Remove unnecessary margin */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Default text color */
+    font-weight: bold; /* Make it stand out */
+    font-size: 1.5rem; /* Adjust font size */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    margin-left: 1px;
+}
+
+/* Hover effect */
+.logo__link:hover {
+    color: var(--color-accent); /* Change text color on hover */
+    transform: scale(1.1); /* Add scaling effect */
+}
+
+/* Specific styles for the devtamas link */
+.logo .logo__link {
+    position: absolute;
+    left: 1em;
+    margin-top: 0.5em;
+}
+
+/* Remove focus outline for the logo link */
+.logo__link:focus {
+    outline: none; /* Remove the focus outline */
 }
 
 .nav {
@@ -265,7 +301,7 @@ header {
     color: var(--color-light);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 750px) {
     .intro {
         display: grid;
         width: min-content;
@@ -404,14 +440,11 @@ header {
     max-width: 1000px;
     display: grid;
     grid-gap: 2em;
+    
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.portfolio__item {
-    background: var(--color-accent);
-    overflow: hidden;
 
-}
 
 .portfolio__img {
     transition: 
@@ -419,17 +452,21 @@ header {
         opacity 250ms linear;
     object-fit: cover;
     height: 100%;
+    
+
+    
 }
 
 .portfolio__item:focus {
     position: relative;
     z-index: 2;
+    
 }
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .5;
+    transform: scale(1.1);
+    
 }
 
 
@@ -489,12 +526,13 @@ header {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+    overflow: ;
 }
 
 .portfolio-item-individual p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
+    object-fit: cover;
+    height: 100%;
 }
 
 .portfolio-item-individual div {
@@ -512,6 +550,10 @@ header {
     padding: 0.25em 1em;
     text-decoration: none;
 
+}
+
+.portfolio-item-individual a i {
+    margin-right: 0.5em; /* Adjust the value as needed */
 }
 
 /* Project navigation arrows */
@@ -534,4 +576,51 @@ header {
 
 .arrow:hover {
     color: #007bff;
+}
+
+/* Ensure no horizontal overflow on the body */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Fix for the game container */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent child elements from overflowing */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    margin: 0 auto; /* Center the container */
+    padding: 1em; /* Add some padding for spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Ensure child elements fit within the container */
+.game-container > * {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Fix for the green sidebar */
+.sidebar {
+    display: none; /* Hide the sidebar if it's causing overflow */
+}
+
+/* Optional: If the sidebar is needed, constrain its width */
+.sidebar {
+    max-width: 20%;
+    height: 100%;
+    background-color: green;
+    overflow: hidden;
+}
+
+/* Ensure buttons and elements inside the game are responsive */
+button,
+.game-buttons {
+    max-width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
 }
