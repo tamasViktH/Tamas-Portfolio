@@ -9,6 +9,6 @@ navToggle.addEventListener('click', () => {
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         document.body.classList.remove('nav-open');
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflow = 'auto';
     });
 });
