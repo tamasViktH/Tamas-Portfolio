@@ -552,7 +552,7 @@ header {
 }
 
 .portfolio-item-individual a i {
-    margin-right: 0.5em; /* Adjust the value as needed */
+    margin-right: 0.5em; 
 }
 
 /* Project navigation arrows */
@@ -577,38 +577,38 @@ header {
     color: #007bff;
 }
 
-/* Ensure no horizontal overflow on the body */
+
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
 }
 
-/* Fix for the game container */
+
 .game-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Prevent child elements from overflowing */
-    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
-    margin: 0 auto; /* Center the container */
-    padding: 1em; /* Add some padding for spacing */
-    box-sizing: border-box; /* Include padding and border in width */
+    overflow: hidden; 
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 1em; 
+    box-sizing: border-box; 
 }
 
-/* Ensure child elements fit within the container */
+
 .game-container > * {
     max-width: 100%;
     box-sizing: border-box;
 }
 
-/* Fix for the green sidebar */
+
 .sidebar {
-    display: none; /* Hide the sidebar if it's causing overflow */
+    display: none; 
 }
 
-/* Optional: If the sidebar is needed, constrain its width */
+
 .sidebar {
     max-width: 20%;
     height: 100%;
@@ -616,7 +616,7 @@ body {
     overflow: hidden;
 }
 
-/* Ensure buttons and elements inside the game are responsive */
+
 button,
 .game-buttons {
     max-width: 100%;
