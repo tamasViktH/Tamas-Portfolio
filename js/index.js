@@ -4,6 +4,7 @@ const navLinks = document.querySelectorAll('.nav__link');
 navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
     document.body.style.overflow = document.body.classList.contains('nav-open') ? 'hidden' : 'auto';
+    navToggle.blur();
 });
 
 navLinks.forEach(link => {
